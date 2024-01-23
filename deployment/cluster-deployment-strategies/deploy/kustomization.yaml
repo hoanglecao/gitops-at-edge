@@ -4,5 +4,6 @@ kind: Kustomization
 namespace: argocd
 
 resources:
-- ../argo-apps
 - ../argo-projects
+- ../argo-apps
+
