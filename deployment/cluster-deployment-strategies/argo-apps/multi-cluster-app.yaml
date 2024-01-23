@@ -18,7 +18,7 @@ spec:
       source:
         repoURL: https://github.com/hoanglecao/gitops-at-edge.git
         targetRevision: main
-        path: apps/demo4/base/
+        path: apps/welcome-app/base
       destination:
         server: "{{server}}"
         namespace: welcome-app
