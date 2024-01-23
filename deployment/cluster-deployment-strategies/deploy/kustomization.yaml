@@ -3,6 +3,6 @@ kind: Kustomization
 
 namespace: argocd
 
-bases:
+resources:
 - ../argo-apps
 - ../argo-projects
