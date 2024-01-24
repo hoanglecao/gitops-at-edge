@@ -8,6 +8,6 @@ resources:
   - ../../base
   - namespace.yml
 
-patches:
+patchesStrategicMerge:
   - deployment.yaml
   - version.yaml
