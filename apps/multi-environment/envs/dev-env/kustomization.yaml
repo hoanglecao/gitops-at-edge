@@ -11,4 +11,4 @@ patchesStrategicMerge:
   - deployment.yaml
   - replicas.yaml
   - version.yaml
-  - namespace.yml
+  #- namespace.yml
