@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: dev-env-multicluster-app
+  namespace: argocd
+spec:
+  generators:
+  - clusters:
+      selector:
+        matchLabels:
+          dev: "true"
+  template:
+    metadata:
+      name: "{{name}}-dev-env-awesome-app"
+    spec:
+      project: apps-project
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
+      source:
+        repoURL: https://github.com/hoanglecao/gitops-at-edge.git
+        targetRevision: main
+        path: apps/multi-environment/envs/dev-env
+      destination:
+        server: "{{server}}"
+        namespace: welcome-app
