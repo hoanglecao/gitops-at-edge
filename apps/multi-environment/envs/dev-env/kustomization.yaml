@@ -6,9 +6,10 @@ namePrefix: dev-
 
 resources:
   - ../../base
+  - namespace.yml
 
 patchesStrategicMerge:
   - deployment.yaml
   - replicas.yaml
   - version.yaml
-  #- namespace.yml
+  
