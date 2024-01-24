@@ -3,5 +3,5 @@ kind: Kustomization
 
 resources:
   - dev-env-multicluster-app.yaml
-  - staging-env-multicluster-app.yaml
-  - prod-env-multicluster-app.yaml
+ # - staging-env-multicluster-app.yaml
+ # - prod-env-multicluster-app.yaml
