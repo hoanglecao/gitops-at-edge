@@ -11,4 +11,3 @@ patches:
   - deployment.yaml
   - replicas.yaml
   - version.yaml
-  - namespace.yaml
