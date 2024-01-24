@@ -11,4 +11,4 @@ patches:
   - deployment.yaml
   - replicas.yaml
   - version.yaml
-  - namspace.yaml
+  - namespace.yaml
