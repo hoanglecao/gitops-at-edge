@@ -7,6 +7,6 @@ namePrefix: prod-
 resources:
   - ../../base
 
-patchesStrategicMerge:
+patches:
   - deployment.yaml
   - version.yaml

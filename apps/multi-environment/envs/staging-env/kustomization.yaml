@@ -7,6 +7,6 @@ namePrefix: staging-
 resources:
   - ../../base
 
-patchesStrategicMerge:
+patches:
   - deployment.yaml
   - version.yaml
